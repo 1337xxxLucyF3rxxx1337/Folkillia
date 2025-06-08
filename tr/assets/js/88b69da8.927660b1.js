@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[935],{3249:i=>{i.exports=JSON.parse('{"tags":[{"label":"nvidia","permalink":"/Folkillia/tr/nixos/tags/nvidia","count":1},{"label":"nixos","permalink":"/Folkillia/tr/nixos/tags/nixos","count":3}]}')}}]);

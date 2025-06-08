@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[334],{9427:e=>{e.exports=JSON.parse('{"tag":{"label":"dev","permalink":"/Folkillia/dev/tags/dev","allTagsPath":"/Folkillia/dev/tags","count":1,"items":[{"id":"dev","title":"Disclaimer","description":"Dev Disclaimer","permalink":"/Folkillia/dev/"}],"unlisted":false}}')}}]);
