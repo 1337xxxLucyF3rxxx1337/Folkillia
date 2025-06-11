@@ -21,10 +21,10 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // Cyber-Syntax/
-  baseUrl: "/",
+  baseUrl: "/Folkillia/",
 
-  projectName: "cyber-syntax.github.io", // Usually your repo name.
-  organizationName: "Cyber-Syntax", // Usually your GitHub org/user name.
+  projectName: "Folkillia", // Usually your repo name.
+  organizationName: "1337xxxLucyF3rxxx1337", // Usually your GitHub org/user name.
   trailingSlash: false,
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -50,7 +50,7 @@ const config = {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
+          editUrl: "https://github.com/1337xxxLucyF3rxxx1337/Folkillia",
           // Equivalent to `enableUpdateBy`.
           showLastUpdateAuthor: true,
           // Equivalent to `enableUpdateTime`.
@@ -65,7 +65,7 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
+          editUrl: "https://github.com/1337xxxLucyF3rxxx1337/Folkillia",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -87,7 +87,7 @@ const config = {
         routeBasePath: "nixos",
         sidebarPath: "./sidebars.js",
         // ... other options
-        editUrl: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
+        editUrl: "https://github.com/1337xxxLucyF3rxxx1337/Folkillia",
         // Equivalent to `enableUpdateBy`.
         showLastUpdateAuthor: true,
         // Equivalent to `enableUpdateTime`.
@@ -102,7 +102,7 @@ const config = {
         routeBasePath: "dev",
         sidebarPath: "./sidebars.js",
         // ... other options
-        editUrl: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
+        editUrl: "https://github.com/1337xxxLucyF3rxxx1337/Folkillia",
         // Equivalent to `enableUpdateBy`.
         showLastUpdateAuthor: true,
         // Equivalent to `enableUpdateTime`.
@@ -125,106 +125,7 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
-      navbar: {
-        title: "Cyber-Syntax",
-        hideOnScroll: false,
-        //logo: {
-        //  alt: "My Site Logo",
-        //  src: "img/logo.svg",
-        //},
-        items: [
-          // NAVBAR
-          { type: "search", position: "right" },
-          { to: "educations", label: "Education", position: "left" },
-          { to: "projects", label: "Projects", position: "left" },
-          { to: "skills", label: "Skills", position: "left" },
-          {
-            to: "nixos",
-            position: "right",
-            label: "NixOS",
-          },
-          {
-            to: "dev",
-            position: "right",
-            label: "Developer",
-          },
-          {
-            type: "docSidebar",
-            sidebarId: "defaultSidebar",
-            position: "right",
-            label: "Wiki",
-          },
-          {
-            type: "localeDropdown",
-            position: "right",
-            dropdownItemsAfter: [
-              {
-                to: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
-                label: "Help me to translate",
-              },
-            ],
-          },
 
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            "aria-label": "GitHub Repository",
-            className: "header--github-link",
-            href: "https://github.com/Cyber-Syntax",
-            position: "right",
-          },
-          // {
-          //   // aria-label: "GitHub repository",
-          //   href: "https://github.com/Cyber-Syntax",
-          //   label: "GitHub",
-          //   position: "right",
-          //   className: "header--github-link",
-          // },
-        ],
-      },
-      footer: {
-        style: "dark",
-        // links: [
-        //   //{
-        //   //  title: "Docs",
-        //   //  items: [
-        //   //    {
-        //   //      label: "Wiki",
-        //   //      //to: "/docs",
-        //   //    },
-        //   //  ],
-        //   //},
-        //   {
-        //     title: "Community",
-        //     items: [
-        //       {
-        //         label: "Mastodon",
-        //         href: "https://mastodon.social/@priv4cy",
-        //       },
-        //       {
-        //         label: "X",
-        //         href: "https://x.com/cyb_serif",
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: "More",
-        //     items: [
-        //       {
-        //         label: "Blog",
-        //         to: "/blog",
-        //       },
-        //     {
-        //       href: "https://github.com/Cyber-Syntax",
-        //       label: "GitHub",
-        //       position: "right",
-        //       className: "header--github-link",
-        //       "aria-label": "GitHub repository",
-        //     },
-        //     ],
-        //   },
-        // ],
-        copyright: `Copyright © ${new Date().getFullYear()} Cyber-Syntax Personal Portfolio, Inc. Built with Docusaurus.`,
-      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.oneDark,

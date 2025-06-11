@@ -33,7 +33,7 @@ const codeComments = [
   "print('scanning network ports')",
   "sudo ./secure_connection.sh",
   "chmod 700 ./encrypted_data",
-  "cat /var/log/audit/audit.log | grep VIOLATION",
+  "cat /var/log/audit/audit.log | grep PAWNED",
   'printf("breach detection system: ACTIVE\\n");',
   "ssh -i ~/.ssh/id_rsa user@192.168.1.10",
   "find / -perm -4000 -user root -exec ls -l {} \\;",
@@ -41,12 +41,12 @@ const codeComments = [
   "tcpdump -i eth0 port 443",
   "echo 'patching kernel vulnerabilities';",
   "fail2ban-client status",
-  "systemctl status firewalld",
+  "systemctl status firewalld BIN BARRA BASH",
   "nmap -sS -sV -p- 192.168.1.0/24",
   "gpg --encrypt --recipient user@example.com secret.txt",
   "journalctl -xef",
   "iptables -A INPUT -p tcp --dport 22 -j DROP",
-  "curl -s https://api.github.com/repos/cyber-syntax/cyber-syntax.github.io",
+  "curl -s https://api.github.com/repos/1337xxxLucyF3rxxx1337/Folkillia.github.io",
   "cat /etc/shadow | grep root",
   "sudo systemctl restart sshd",
   "openssl genrsa -out private.key 4096",
@@ -77,12 +77,31 @@ const codeComments = [
 
 // Typing effect phrases
 const typingPhrases = [
-  "Linux Enthusiast",
-  "Open Source Advocate",
-  "Developer & System Administrator",
-  "Cyber Security Advocate",
-  "Python Enthusiast",
-  "Automation Specialist",
+  "Threat Hunter",
+  "Incident Responder",
+  "Digital Forensics",
+  "Security Researcher",
+  "Rainbow Team",
+  "Security Consultant",
+  "Security Operations Center (SOC) Analyst",
+  "Security Awareness Mentor",
+  "Risk Management",
+  "Compliance Trust & Safety",
+  "People Protection Officer",
+  "Identity & Access Management",
+  "Security Operations Analyst",
+  "Threat Intelligence Analyst",
+  "Crunching and Asume Risk Tactical",
+  "Security Incident",
+  "Security Software & Hardware",
+  "Panel Moderation",
+  "IT Support Specialist",
+  "Server Administrator",
+  "Mobile Technology Specialist",
+  "System Administrator",
+  "Cyber Security 23/6",
+  "Developer Enthusiast",
+  "Domadora de IAs",
 ];
 
 // Social media links with proper icons
@@ -98,7 +117,7 @@ const socialMediaLinks = [
     url: "https://cyberdefenders.org/p/ThekillaLady",
   },
   {
-    name: "Cyberdefenders",
+    name: "VirusTotal",
 
     url: "https://www.virustotal.com/gui/user/LadyThekilla",
   },
@@ -160,7 +179,7 @@ function TypeWriter() {
     <div className={styles.typingEffectContainer}>
       <div className={styles.cyberTerminal}>
         <div className={styles.cyberTerminalHeader}>
-          <span className={styles.cyberTerminalTitle}>Lady-The-Killa</span>
+          <span className={styles.cyberTerminalTitle}>Lady-thekilla</span>
           <div className={styles.cyberTerminalButtons}>
             <span></span>
             <span></span>
@@ -169,7 +188,7 @@ function TypeWriter() {
         </div>
         <div className={styles.cyberTerminalBody}>
           <span className={styles.cyberTerminalPrompt}>
-            root@lady-the-killa:~${" "}
+            root@k1ll4:~${" "}
           </span>
           <span className={styles.typingEffect}>{text}</span>
           <span className={styles.cyberTerminalCursor}></span>
@@ -179,12 +198,12 @@ function TypeWriter() {
   );
 }
 
-// Cyber Security Typewriter effect for About Me section without deletion
+// Cyber Security Typewriter effect for Find Me section without deletion
 function CyberSecurityTypewriter() {
   const aboutMeParagraphs = [
-    "I'm passionate about Linux and system administration with a drive for continuous learning and improvement.",
-    "I love automation with Python and shell scripting.",
-    "I'm always exploring new technologies and tools to enhance my skill set.",
+    "Know what you have, disamble, asamble, get how to make it work it's the power that everyone who posses somenthig inmediatly have the right",
+    "The art to see what others can not, get to the bottom of the issue made you a hunter.",
+    "Cyber space and the physic world no longer separate anymore.",
   ];
 
   const [displayedText, setDisplayedText] = useState(["", "", ""]);
@@ -199,12 +218,12 @@ function CyberSecurityTypewriter() {
     if (isComplete) return;
 
     const typeNextChar = () => {
-      if (currentIndex >= aboutMeParagraphs.length) {
+      if (currentIndex >= findMeParagraphs.length) {
         setIsComplete(true);
         return;
       }
 
-      const currentParagraph = aboutMeParagraphs[currentIndex];
+      const currentParagraph = fingMeParagraphs[currentIndex];
       if (currentChar < currentParagraph.length) {
         setDisplayedText((prev) => {
           const newText = [...prev];
@@ -286,7 +305,7 @@ function AboutMeSection() {
     <div className={styles.aboutMeSection}>
       <div className={styles.cyberHeader}>
         <div className={styles.cyberTerminalHeader}>
-          <span className={styles.cyberTerminalTitle}>Lady The Killa</span>
+          <span className={styles.cyberTerminalTitle}>LadyTheKilla</span>
           <div className={styles.cyberTerminalButtons}>
             <span></span>
             <span></span>
@@ -302,14 +321,14 @@ function AboutMeSection() {
           </div>
           <div className={styles.cyberHeaderContent}>
             <img
-              src="/img/killa.png"
+              src="/img/Perfilgit.png"
               alt="Profile"
               className={styles.cyberProfilePicture}
             />
             <div className={styles.cyberTitleContainer}>
               <h2 className={styles.cyberTitle}>
                 <span className={styles.cyberTitlePrefix}>&lt;</span>
-                About_Me
+                Find me
                 <span className={styles.cyberTitleSuffix}>/&gt;</span>
               </h2>
               <div className={styles.cyberSubtitle}>
@@ -317,14 +336,14 @@ function AboutMeSection() {
                   icon={faLock}
                   className={styles.cyberSecurityIcon}
                 />
-                <span>Developer & System Administrator</span>
+                <span> |Hunting | Infosec | Systems & Hardware| </span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className={styles.aboutMeBody}>
+      <div className={styles.findMeBody}>
         <CyberSecurityTypewriter />
       </div>
 
@@ -397,9 +416,9 @@ function HomepageHeader() {
         {/* TypeWriter effect */}
         <TypeWriter />
 
-        {/* Full-width About Me section */}
+        {/* Full-width Find Me section */}
         <div className={styles.fullWidthSection}>
-          <AboutMeSection />
+          <FindMeSection />
         </div>
       </div>
     </div>
