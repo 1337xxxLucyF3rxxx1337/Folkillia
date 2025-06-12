@@ -6,7 +6,7 @@ import styles from "./index.module.css";
 import React, { useState, useEffect, useRef } from "react";
 // Import Font Awesome components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import foto from "@site/static/img/Perfilgit.png";
 // Import solid icons
 import {
   faLock,
@@ -59,7 +59,7 @@ const codeComments = [
   "git checkout -b feature/new-auth-system",
   "python3 -m venv .venv && source .venv/bin/activate",
   "kubectl get pods --all-namespaces",
-  'curl -X POST -H "Content-Type: application/json" -d \'{"key":"value"}\' https://api.example.com',
+  'curl -X POST -H "Content-Type: application/json" -d \'{"key":"value"}\' https://BINBARRABASH.com/../../../',
   'prettier --write "src/**/*.{js,jsx,ts,tsx}"',
   "git rebase -i HEAD~5",
   // Sysadmin commands
@@ -198,7 +198,7 @@ function TypeWriter() {
   );
 }
 
-// Cyber Security Typewriter effect for Find Me section without deletion
+// Cyber Security Typewriter effect for About Me section without deletion
 function CyberSecurityTypewriter() {
   const aboutMeParagraphs = [
     "Know what you have, disamble, asamble, get how to make it work it's the power that everyone who posses somenthig inmediatly have the right",
@@ -218,12 +218,12 @@ function CyberSecurityTypewriter() {
     if (isComplete) return;
 
     const typeNextChar = () => {
-      if (currentIndex >= findMeParagraphs.length) {
+      if (currentIndex >= aboutMeParagraphs.length) {
         setIsComplete(true);
         return;
       }
 
-      const currentParagraph = fingMeParagraphs[currentIndex];
+      const currentParagraph = aboutMeParagraphs[currentIndex];
       if (currentChar < currentParagraph.length) {
         setDisplayedText((prev) => {
           const newText = [...prev];
@@ -321,14 +321,14 @@ function AboutMeSection() {
           </div>
           <div className={styles.cyberHeaderContent}>
             <img
-              src="/img/Perfilgit.png"
+              src={foto}
               alt="Profile"
               className={styles.cyberProfilePicture}
             />
             <div className={styles.cyberTitleContainer}>
               <h2 className={styles.cyberTitle}>
                 <span className={styles.cyberTitlePrefix}>&lt;</span>
-                Find me
+                About Me
                 <span className={styles.cyberTitleSuffix}>/&gt;</span>
               </h2>
               <div className={styles.cyberSubtitle}>
@@ -343,7 +343,7 @@ function AboutMeSection() {
         </div>
       </div>
 
-      <div className={styles.findMeBody}>
+      <div className={styles.AboutMeBody}>
         <CyberSecurityTypewriter />
       </div>
 
@@ -416,9 +416,9 @@ function HomepageHeader() {
         {/* TypeWriter effect */}
         <TypeWriter />
 
-        {/* Full-width Find Me section */}
+        {/* Full-width About Me section */}
         <div className={styles.fullWidthSection}>
-          <FindMeSection />
+          <AboutMeSection />
         </div>
       </div>
     </div>
