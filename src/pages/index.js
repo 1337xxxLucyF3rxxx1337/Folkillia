@@ -114,7 +114,7 @@ const socialMediaLinks = [
   {
     name: "Cyberdefenders",
 
-    url: "https://cyberdefenders.org/p/ThekillaLady",
+    url: "https://cyberdefenders.org/p/The_Killa",
   },
   {
     name: "VirusTotal",
