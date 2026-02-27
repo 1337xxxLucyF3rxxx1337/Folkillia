@@ -201,9 +201,9 @@ function TypeWriter() {
 // Cyber Security Typewriter effect for About Me section without deletion
 function CyberSecurityTypewriter() {
   const aboutMeParagraphs = [
-    "Know what you have, disamble, asamble, get how to make it work it's the power that everyone who posses somenthig inmediatly have the right",
-    "The art to see what others can not, get to the bottom of the issue made you a hunter.",
-    "Cyber space and the physic world no longer separate anymore.",
+    "Know what you own. Take it apart. Make it work for you.",
+    " The art of seeing what others miss is what makes a hunter.",
+    "Cyberspace and the physical world are no longer separate — and they haven't been for a while.",
   ];
 
   const [displayedText, setDisplayedText] = useState(["", "", ""]);
@@ -241,8 +241,8 @@ function CyberSecurityTypewriter() {
       }
     };
 
-    // Random typing speed between 30ms and 70ms for a more authentic feel
-    const speed = Math.floor(Math.random() * 40) + 30;
+    // Before Math.random() * 40 + 30 (aprox 50ms) now * 20 +10 (aprox 20ms)
+    const speed = Math.floor(Math.random() * 20) + 10;
     _typingInterval.current = setTimeout(typeNextChar, speed);
 
     return () => clearTimeout(_typingInterval.current);
