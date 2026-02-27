@@ -203,7 +203,7 @@ function CyberSecurityTypewriter() {
   const aboutMeParagraphs = [
     "Know what you own. Take it apart. Make it work for you.",
     " The art of seeing what others miss is what makes a hunter.",
-    "Cyberspace and the physical world are no longer separate — and they haven't been for a while.",
+    "Cyberspace and the physical world are no longer separate; And they haven't been for a while.",
   ];
 
   const [displayedText, setDisplayedText] = useState(["", "", ""]);
